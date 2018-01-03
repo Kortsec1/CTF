@@ -8,55 +8,13 @@ ssh fd@pwnable.kr -p2222 (pw:guest)
 
 들어가보니, 파일 3개가 있었습니다.
 
-
-
-![fd](https://user-images.githubusercontent.com/35005298/34519549-e5f30494-f0c7-11e7-9f0d-d4ef09792c6f.PNG)
-
-
 이제 소스코드를 분석해 봅시다.
 
 <분석>
 
-#include <stdio.h>
 
-#include <stdlib.h>
+![fd](https://user-images.githubusercontent.com/35005298/34519549-e5f30494-f0c7-11e7-9f0d-d4ef09792c6f.PNG)
 
-#include <string.h>
-
-char buf[32];
-
-int main(int argc, char* argv[], char* envp[]){
-
-if(argc<2){
-
-printf("pass argv[1] a number\n");
-
-return 0;
-
-}
-
-int fd = atoi( argv[1] ) - 0x1234;
-
-int len = 0;
-
-len = read(fd, buf, 32);
-
-if(!strcmp("LETMEWIN\n", buf)){
-
-printf("good job :)\n");
-
-system("/bin/cat flag");
-
-exit(0);
-
-
-}
-
-printf("learn about Linux file IO\n");
-
-return 0;
-
-}
 
 5번째 줄을 보면, fd를 실행하는 명령어 바로 옆에 문자를 입력받는 형식을 이용합니다.
 예를들어, bash에 ./fd 1234를 입력하면, argv[1]에 1234가 입력되는 것입니다.
