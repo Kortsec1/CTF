@@ -2,7 +2,7 @@
 Mommy! what is a file descriptor in Linux?
 ssh fd@pwnable.kr -p2222 (pw:guest)
 
-<img src="../Wargame/pwnable.kr/fd/파일 목록.PNG" width="640" height="82" border="0" alt="">
+./파일 목록
 들어가보니, 파일 3개가 있었습니다.
 
  <img src="../Wargame/pwnable.kr/fd/fd소스코드.PNG" width="644" height="357" border="0" alt="">
