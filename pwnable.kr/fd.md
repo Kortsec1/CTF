@@ -2,10 +2,16 @@
 Mommy! what is a file descriptor in Linux?
 ssh fd@pwnable.kr -p2222 (pw:guest)
 
-./images/파일 목록.PNG
+
+![default](https://user-images.githubusercontent.com/35005298/34519547-e5960ee2-f0c7-11e7-882a-1f528650d7d0.PNG)
+
 들어가보니, 파일 3개가 있었습니다.
 
-!https://github.com/Kortsec1/Wargame/blob/master/pwnable.kr/images/fd%EC%86%8C%EC%8A%A4%EC%BD%94%EB%93%9C.PNG?raw=true
+
+
+![fd](https://user-images.githubusercontent.com/35005298/34519549-e5f30494-f0c7-11e7-9f0d-d4ef09792c6f.PNG)
+
+
 이제 소스코드를 분석해 봅시다.
 
 <분석>
@@ -48,9 +54,11 @@ flag를 읽어주는 알고리즘 입니다.
 <풀이>
 16진수, 1234를 10진수로 바꾸면, 4660이 됩니다. 그렇다면, fd를 실행시킨후, 4660을 입력한다면, read함수를 실행
 할 때 fd가 0이 되어 원하는 값을 buf에 넣을 수 있게 됩니다.
-![default](https://user-images.githubusercontent.com/35005298/34519548-e5c39f56-f0c7-11e7-8dbf-b7d7daa36867.PNG)
+![default](https://user-images.githubusercontent.com/35005298/34519550-e62165be-f0c7-11e7-90e7-e080b237884b.PNG)
+
 이렇게요!
 
 이제 이 입력값에 LETMEWIN을 입력한다면?
-![default](https://user-images.githubusercontent.com/35005298/34519550-e62165be-f0c7-11e7-90e7-e080b237884b.PNG)
+![default](https://user-images.githubusercontent.com/35005298/34519548-e5c39f56-f0c7-11e7-8dbf-b7d7daa36867.PNG)
+
 이렇게 flag의 내용이 보이게 됩니다. 
