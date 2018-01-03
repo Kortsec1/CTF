@@ -2,7 +2,7 @@
 Mommy! what is a file descriptor in Linux?
 ssh fd@pwnable.kr -p2222 (pw:guest)
 
-https://user-images.githubusercontent.com/35005298/34519547-e5960ee2-f0c7-11e7-882a-1f528650d7d0.PNG
+./images/파일
 들어가보니, 파일 3개가 있었습니다.
 
 !https://github.com/Kortsec1/Wargame/blob/master/pwnable.kr/images/fd%EC%86%8C%EC%8A%A4%EC%BD%94%EB%93%9C.PNG?raw=true
