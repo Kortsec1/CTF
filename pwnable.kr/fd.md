@@ -1,4 +1,4 @@
-[pwnable.kr] fd
+[pwnable.kr] [pwn] fd
 =====================
 
 >##문제
