@@ -1,6 +1,5 @@
 [pwnable.kr] fd
 =====================
-*****
 
 >##문제
 >Mommy! what is a file descriptor in Linux?  
