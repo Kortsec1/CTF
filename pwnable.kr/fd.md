@@ -2,8 +2,8 @@
 =====================
 
 >##문제
->Mommy! what is a file descriptor in Linux?  
->ssh fd@pwnable.kr -p2222 (pw:guest)
+> Mommy! what is a file descriptor in Linux?  
+> ssh fd@pwnable.kr -p2222 (pw:guest)
 
 ![default](https://user-images.githubusercontent.com/35005298/34519547-e5960ee2-f0c7-11e7-882a-1f528650d7d0.PNG)
 
