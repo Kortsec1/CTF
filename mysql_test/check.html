@@ -19,7 +19,7 @@
 
       $sql="SELECT user_id FROM users WHERE user_id = '$id' AND user_pw = '$pw';"
       $result = mysql_query($sql);
-      $auth = mysql_fetch_array($result);
+      $auth = mysql_fetch_array($result['user_id']);
 
       if (!$result) {
         echo "login failed..";
