@@ -17,11 +17,11 @@
       $id = $_GET['id'];
       $pw = $_GET['pw'];
 
-      $sql="SELECT user_id FROM users WHERE user_id = '$id' AND user_pw = '$pw';"
+      $sql="SELECT * FROM users WHERE user_id = '$id' AND user_pw = '$pw';"
       $result = mysql_query($sql);
       $auth = mysql_fetch_array($result['user_id']);
 
-      if (!$result) {
+      if ($result['user_id'] != $id) {
         echo "login failed..";
       }
 
